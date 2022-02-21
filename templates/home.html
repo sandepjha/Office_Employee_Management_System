@@ -1,0 +1,55 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <title>Employee Management System!</title>
+</head>
+
+<body>
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+   
+    <!-- <marquee behavior="left" direction="left"> -->
+      <h3 style="background: skyblue; text-align: center;">Office Employee Management System
+        <!-- <div class="conatiner" style="float: right;"> -->
+          <!-- <a href="SignOut" class="btn btn-danger" style="border-top-right-radius: 100px;">SignOut</a>
+          <a href="SignOut" class="btn btn-danger" style="border-top-right-radius: 100px;">SignOut</a> -->
+          
+        <!-- </div> -->
+      </h3>
+      <h3 style="background: green; text-align: right;"><a href="SignOut" class="btn btn-danger" style="border-top-right-radius: 100px; text-align: end;">SignOut</a></h3>
+    <!-- </marquee> -->
+    <img src="{% static 'images/office1.jpg' %}" style="width: 1365px; height: 629px;" alt="3">
+    <div class="container">
+      <div class="carousel-caption d-none d-md-block">
+        <marquee behavior="slide" direction="right">
+          <div style="float: left;padding-top: 10%;">
+            <a class="btn btn-primary" href="/view_emp">View All Employee</a>
+            <a class="btn btn-primary" href="/add_emp">Add Employee</a>
+            <a class="btn btn-primary" href="/delete_emp">Delete Employee</a>
+            <a class="btn btn-primary" href="/filter_emp">Filter Employee</a>
+          </div>
+        </marquee>
+        <!-- Optional JavaScript; choose one of the two! -->
+
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+          crossorigin="anonymous"></script>
+
+        <!-- Option 2: Separate Popper and Bootstrap JS -->
+        <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
