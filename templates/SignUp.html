@@ -22,67 +22,65 @@
         <span aria-hidden="true">&times;</span>
       </button>
       {% endfor %} -->
-      {% for ms in messages %}
-      <div class="alert alert-{{ ms}}-dismissible fade show" role="alert">
+    {% for ms in messages %}
+    <div class="alert alert-{{ ms}}-dismissible fade show" role="alert">
         <strong>Message!</strong> {{ ms }}
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
         </button>
-      </div>
-      {% endfor %}
+    </div>
+    {% endfor %}
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-       
-      </div>
-        <!-- <div class="carousel-indicators">
+
+    </div>
+    <!-- <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div> -->
-        <!-- <div class="carousel-inner">
+    <!-- <div class="carousel-inner">
             <div class="carousel-item active"> -->
-        <img src="{% static 'images/office5.jpg' %}" style="width: 1366px; height: 671px;" alt="3">
-        <!-- class="d-block w-75" -->
-        <div class="carousel-caption d-none d-md-block">
-            <h5 style="color: black;">SignUp & LogIn</h5>
-            <div style="float: left;padding-top: 10%;">
-                <!-- <div class="container"> -->
-                <form name="frmlogin" action="" method="post">
-                    {% csrf_token %}
-                    <!-- <div class="row">
-                                <div class="col-auto"> -->
-                    <div class="mb-3">
-                        <!-- <label for="first_name" class="form-label">User Name</label> -->
-                        <input required type="text" class="form-control" name="username" placeholder="User Name">
-
-                    </div>
-                    <div class="mb-3">
-                        <input required type="text" class="form-control" name="fname" placeholder="First Name">
-                        <!-- <label for="first_name" class="form-label">First Name</label> -->
-                    </div>
-                    <div class=" mb-3">
-                        <input required type="text" class="form-control" name="lname" placeholder="Last Name" .>
-                        <!-- <label for="last_name" class="form-label">Last Name</label> -->
-                    </div>
-                    <div class=" mb-3">
-                        <input required type="email" class="form-control" placeholder="Email" name="email">
-                        <!-- <label for="">WorkEmail</label> -->
-                    </div>
-                    <div class=" mb-3">
-                        <input required type="password" class="form-control" id="floatingpassword" placeholder="Password"
-                            name="password">
-                        <!-- <label for="">Password</label> -->
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                    
-                </form>
-                {{msg}}
-            </div>
-            <div style="float: right; padding-top: 10%;">
-                <form name="frmlogin" action="/LogIn" method="post">
-                    {% csrf_token %}
+    <img src="{% static 'images/office5.jpg' %}" style="width: 1366px; height: 671px;" alt="3">
+    <!-- class="d-block w-75" -->
+    <div class="carousel-caption d-none d-md-block">
+        <h5 style="color: black;">SignUp & LogIn</h5>
+        <div style="float: left;padding-top: 10%;">
+            <!-- <div class="container"> -->
+            <form name="frmlogin" action="" method="post">
+                {% csrf_token %}
+                <!-- <div class="row">
+                <div class="col-auto"> -->
                 <div class="mb-3">
                     <!-- <label for="first_name" class="form-label">User Name</label> -->
                     <input required type="text" class="form-control" name="username" placeholder="User Name">
-    
+                </div>
+                <div class="mb-3">
+                    <input required type="text" class="form-control" name="fname" placeholder="First Name">
+                    <!-- <label for="first_name" class="form-label">First Name</label> -->
+                </div>
+                <div class=" mb-3">
+                    <input required type="text" class="form-control" name="lname" placeholder="Last Name" .>
+                    <!-- <label for="last_name" class="form-label">Last Name</label> -->
+                </div>
+                <div class=" mb-3">
+                    <input required type="email" class="form-control" placeholder="Email" name="email">
+                    <!-- <label for="">WorkEmail</label> -->
+                </div>
+                <div class=" mb-3">
+                    <input required type="password" class="form-control" id="floatingpassword" placeholder="Password"
+                        name="password">
+                    <!-- <label for="">Password</label> -->
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+
+            </form>
+            {{msg}}
+        </div>
+        <div style="float: right; padding-top: 10%;">
+            <form name="frmlogin" action="/LogIn" method="post">
+                {% csrf_token %}
+                <div class="mb-3">
+                    <!-- <label for="first_name" class="form-label">User Name</label> -->
+                    <input required type="text" class="form-control" name="username" placeholder="User Name">
                 </div>
                 <div class=" mb-3">
                     <input type="password" class="form-control" id="floatingpassword" placeholder="Password"
@@ -90,30 +88,30 @@
                     <!-- <label for="">Password</label> -->
                 </div>
                 <button type="submit" class="btn btn-primary">LogIn</button>
-                
+
             </form>
-        
+
             {{error}}
-            </div>
         </div>
-        
+    </div>
 
 
-        <!-- ------------------------------ -->
-        <!-- <label class="form-label"> First Name </label>
+
+    <!-- ------------------------------ -->
+    <!-- <label class="form-label"> First Name </label>
             <div class="row">
             <div class="col-auto">
             <input class="form-control" type="text"> -->
 
-        <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Optional JavaScript; choose one of the two! -->
 
-        <!-- Option 1: Bootstrap Bundle with Popper -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-            crossorigin="anonymous"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 
-        <!-- Option 2: Separate Popper and Bootstrap JS -->
-        <!--
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     -->
